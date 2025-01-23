@@ -211,3 +211,8 @@ def getttsforword():
         if cancellation_details.reason == speechsdk.CancellationReason.Error:
             print("Error details: {}".format(cancellation_details.error_details))
         return jsonify({"success":False})
+
+if __name__ == "__main__":
+     app.run(debug=True)    
+   
+

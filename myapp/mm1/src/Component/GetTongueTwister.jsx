@@ -2,8 +2,8 @@ import React, { useState, useRef } from "react";
 import axios from "axios";
 import TextArea from "./TextArea";
 
-const GetTongueTwister = () => {
-  const [tongueTwister, setTongueTwister] = useState(""); // Manage the tongue twister text
+const GetTongueTwister =  ({ tongueTwister, setTongueTwister })  => {
+  //const [tongueTwister, setTongueTwister] = useState(""); // Manage the tongue twister text
   const [audioUrl, setAudioUrl] = useState(""); // Store the audio URL for playback
   const [isRecording, setIsRecording] = useState(false); // To track recording status
   const mediaRecorderRef = useRef(null); // MediaRecorder reference
